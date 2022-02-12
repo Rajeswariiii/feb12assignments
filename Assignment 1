@@ -1,0 +1,35 @@
+dp=24
+bg=120
+gb=300
+hhp=200
+oils=60
+cname=input("Enter customer name:")
+cphno=int(input("Phone number:"))
+dpq=int(input("no.of Diary products:"))
+bgq=int(input("no.of Backed goods:"))
+gbq=int(input("no.of Grains & bread:"))
+hhpq=int(input("no.of household products:"))
+oilsq=int(input("no.of oil packets:"))
+bill=(dp*dpq)+(bg*bgq)+(gb*gbq)+(hhp*hhpq)+(oils*oilsq)
+print("total bill:",bill)
+if bill>5000:
+    disc=bill*10/100
+elif bill>3000:
+    disc=bill*8/100
+    tax=bill*10/100
+elif bill>2000:
+    disc=bill*5/100
+elif bill>1000:
+    disc=bill*3/100
+else:
+    tax=bill*18/100
+    print("tax:",tax)
+print("discount:",disc)
+enter customer name:crrd
+enter customer phno:24
+enter no of chocolate packets:33
+enter no ofcooldrink bottles:22
+enter no of lays packets:33
+enter no of biscuit packets:33
+bill amount: 4880.7
+>
